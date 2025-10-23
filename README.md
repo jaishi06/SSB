@@ -53,7 +53,11 @@ Model Waveform
 
 Program
 
+[ssbsc ss 2.pdf](https://github.com/user-attachments/files/23103691/ssbsc.ss.2.pdf)
+
 OUTPUT WAVEFORM
+
+[ssbsc ss 1.pdf](https://github.com/user-attachments/files/23103695/ssbsc.ss.1.pdf)
 
 TABULATION
 
