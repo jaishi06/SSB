@@ -2,6 +2,8 @@
 
 EXP NO: 3	SSB-SC-AM MODULATION using SCILAB
 
+JAISHIKAA (212224060103)
+
 AIM:
 
 To write a program to perform SSBSC modulation and demodulation using SCI LAB and study its spectral characteristics
