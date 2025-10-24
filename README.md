@@ -2,7 +2,7 @@
 
 EXP NO: 3	SSB-SC-AM MODULATION using SCILAB
 
-JAISHIKAA (212224060103)
+JAISHIKAA (212240103)
 
 AIM:
 
@@ -54,41 +54,38 @@ Model Waveform
 <img width="706" height="167" alt="image" src="https://github.com/user-attachments/assets/bff0d8fd-d679-444e-af37-0b34585853c1" />
 
 Program
-Am=5;
-Fm=477;
-Fs=47700;
-t=0:1/Fs:2/Fm;
-m1=Am*cos(2*3.14*Fm*t);
+
+```
+am=3.6;
+fm=302;
+fs=30200;
+ac=7.2;
+fc=3020;
+t=0:1/fs:2/fm
+m1=am*cos(2*3.14*fm*t);
 subplot(4,1,1);
 plot(t,m1);
-Ac=9;
-Fc=4770;
-c1=Ac*cos(2*3.14*Fc*t);
+c1=ac.*cos(2*3.14*fc*t);
 subplot(4,1,2);
 plot(t,c1);
-m2=Am*cos(1.57-(2*3.14*Fm*t));
-c2=Ac*cos(1.57-(2*3.14*Fc*t));
-s1=c1.*m1;
-s2=c2.*m2;
-S_lsb=s1+s2;
+m2=am*cos(1.57-(2*3.14*fm*t));
+c2=ac.*cos(1.57-(2*3.14*fc*t));
+a=c1.*m1;
+b=c2.*m2;
+c=a+b;
+d=a-b;
 subplot(4,1,3);
-plot(t,S_lsb);
-S_usb=s1-s2;
+plot(t,c);
 subplot(4,1,4);
-plot(t,S_usb);
-
+plot(t,d);
+```
 OUTPUT WAVEFORM
 
-[ssbsc ss 1.pdf](https://github.com/user-attachments/files/23103695/ssbsc.ss.1.pdf)
+<img width="1762" height="1107" alt="Screenshot 2025-10-13 235124" src="https://github.com/user-attachments/assets/847b2d12-69fb-4174-8900-6b295976cbb5" />
 
 TABULATION
 
-
-
-
-
-
-
+![WhatsApp Image 2025-10-14 at 00 31 26_7e7337c5](https://github.com/user-attachments/assets/b1ecfa75-59ee-49e1-a214-9fd38d423b36)
 
 
 RESULT:
